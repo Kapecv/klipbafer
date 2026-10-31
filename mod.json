@@ -1,0 +1,15 @@
+{
+  "geode": "4.0.0",
+  "gd": { "win": "2.2074" },
+  "id": "twojnick.clipbuffer",
+  "name": "Clip Buffer",
+  "version": "v1.0.0",
+  "developer": "TwojNick",
+  "description": "Zapisuje ostatnie 2 minuty gry jako klip, z biblioteką klipów.",
+  "settings": {
+    "ffmpeg-path": { "type": "string", "default": "ffmpeg", "name": "Ścieżka do ffmpeg" },
+    "clip-seconds": { "type": "int", "default": 120, "min": 30, "max": 120, "name": "Długość klipu (sekundy)", "control": { "slider": true } },
+    "scale-720p": { "type": "bool", "default": true, "name": "Skaluj klipy do 720p" },
+    "auto-save-complete": { "type": "bool", "default": true, "name": "Auto-zapis po ukończeniu poziomu" }
+  }
+}
